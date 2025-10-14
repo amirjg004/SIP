@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="58px" height="49px" viewBox="0 0 58 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_dvb</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M25.1069327,44 C37.6159723,46 47.3329172,39.1666667 47.3329173,27.5 C47.3329172,15.8333333 37.1429881,10 24.5978931,10 L5.33291731,10" id="Rectangle-11" stroke="#EBEBEB" stroke-width="8" sketch:type="MSShapeGroup" transform="translate(26.000000, 27.000000) scale(-1, 1) translate(-26.000000, -27.000000) "></path>
+        <circle id="Oval-4" fill="#EBEBEB" sketch:type="MSShapeGroup" transform="translate(27.000000, 44.000000) scale(-1, 1) translate(-27.000000, -44.000000) " cx="27" cy="44" r="4"></circle>
+        <text id="Text-2" sketch:type="MSTextLayer" transform="translate(72.000000, 40.000000) scale(-1, 1) translate(-72.000000, -40.000000) " font-family="Moonstone " font-size="60" font-weight="normal" sketch:alignment="middle" fill="#000000">
+            <tspan x="72" y="55"> </tspan>
+        </text>
+        <rect id="Rectangle-88" fill="#EBEBEB" sketch:type="MSShapeGroup" x="19" y="0" width="30" height="21" rx="4"></rect>
+        <rect id="Rectangle-89" fill="#EBEBEB" sketch:type="MSShapeGroup" x="46" y="7" width="12" height="6" rx="3"></rect>
+    </g>
+</svg>

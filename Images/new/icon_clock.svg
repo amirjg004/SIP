@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_clock</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M50,100 C77.6142389,100 100,77.6142389 100,50 C100,22.3857611 77.6142389,0 50,0 C22.3857611,0 0,22.3857611 0,50 C0,77.6142389 22.3857611,100 50,100 Z M50,87.5 C70.7106791,87.5 87.5,70.7106791 87.5,50 C87.5,29.2893209 70.7106791,12.5 50,12.5 C29.2893209,12.5 12.5,29.2893209 12.5,50 C12.5,70.7106791 29.2893209,87.5 50,87.5 Z M53.25,48.5 L53.25,61 L67.4031311,61 C68.2850575,61 69,60.2921308 69,59.4041698 L69,50.7636557 C69,49.5134732 67.9908074,48.5 66.743409,48.5 L53.25,48.5 Z M47.4443359,25 L42.9075279,25 C41.7159582,25 40.75,25.962913 40.75,27.1575033 L40.75,59.0002927 C40.75,60.1047006 41.6489692,61 42.7583413,61 L53.25,61 L53.25,26.7363548 C53.25,25.7773925 52.4807149,25 51.5136869,25 L47.4443359,25 Z" id="clock" fill="#EBEBEB" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

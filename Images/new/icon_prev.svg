@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="74px" height="89px" viewBox="0 0 74 89" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_prev</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M65.638397,1.25796214 C68.5995286,-0.230700494 71,1.24103139 71,4.57113553 L71,36.4288645 C71,39.7473422 68.5917632,41.2267966 65.638397,39.7420379 L32.7252394,23.1954621 C29.7641078,21.7067995 29.7718732,19.2892966 32.7252394,17.8045379 L65.638397,1.25796214 Z" id="Triangle-1-copy-3" fill="#EBEBEB" sketch:type="MSShapeGroup" transform="translate(51.000000, 20.500000) scale(-1, 1) translate(-51.000000, -20.500000) "></path>
+        <g id="Toolbar-Icons" sketch:type="MSLayerGroup" transform="translate(-584.000000, -11.000000)" fill="#EBEBEB">
+            <path d="M644.41952,66.55998 C644.863025,62.7661225 646.756109,60.1460839 651.341965,60.1460839 C655.927821,60.1460839 657.852458,63.8133353 657.690048,66.4874903 C656.50793,85.951674 640.545967,99.1171828 621,99.1171828 C600.565463,99.1171828 584,82.3347683 584,61.6326086 C583.999999,40.9304488 600.978571,24.031015 621.413108,24.031015 L621.201311,37.4607757 C608.064823,37.4607757 597.214286,48.3240773 597.214286,61.6326086 C597.214285,74.9411398 607.863512,85.7298349 621,85.7298349 C633.243146,85.7298349 643.104793,78.60851 644.41952,66.55998 Z" id="Refresh" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

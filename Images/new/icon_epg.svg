@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="92px" height="92px" viewBox="0 0 92 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_epg</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M8.00345689,0 C3.5832697,0 0,3.57827291 0,8.00345689 L0,83.9965431 C0,88.4167303 3.57827291,92 8.00345689,92 L83.9965431,92 C88.4167303,92 92,88.4217271 92,83.9965431 L92,8.00345689 C92,3.5832697 88.4217271,0 83.9965431,0 L8.00345689,0 Z M15.5079746,23 C13.2944314,23 11.5,24.7839131 11.5,26.9976366 L11.5,76.5023634 C11.5,78.7101971 13.2925015,80.5 15.5079746,80.5 L76.4920254,80.5 C78.7055686,80.5 80.5,78.7160869 80.5,76.5023634 L80.5,26.9976366 C80.5,24.7898029 78.7074985,23 76.4920254,23 L15.5079746,23 Z M23,11.5 L23,17.25 L34.5,17.25 L34.5,11.5 L23,11.5 Z M57.5,11.5 L57.5,17.25 L69,17.25 L69,11.5 L57.5,11.5 Z M57.5,51.75 L57.5,63.25 L69,63.25 L69,51.75 L57.5,51.75 Z M40.25,51.75 L40.25,63.25 L51.75,63.25 L51.75,51.75 L40.25,51.75 Z M23,51.75 L23,63.25 L34.5,63.25 L34.5,51.75 L23,51.75 Z M57.5,34.5 L57.5,46 L69,46 L69,34.5 L57.5,34.5 Z M40.25,34.5 L40.25,46 L51.75,46 L51.75,34.5 L40.25,34.5 Z M23,34.5 L23,46 L34.5,46 L34.5,34.5 L23,34.5 Z" id="calendar" fill="#EBEBEB" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>
