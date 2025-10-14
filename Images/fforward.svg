@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="81px" height="60px" viewBox="0 0 81 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>fforward</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M51,15.4931349 L51,7.74172575 C51,1.10434557 46.393341,-1.50802392 40.7107392,1.89493436 L4.28926082,23.7055019 C-1.38373331,27.1027067 -1.39334102,32.6256752 4.28926082,36.0285465 L40.7107392,57.8385565 C46.3837333,61.2356745 51,58.6236596 51,51.9916076 L51,44.2369944 L64.066679,55.9741784 C69.0051562,60.4101805 73,58.6222207 73,51.9901687 L73,7.74028684 C73,1.10290667 69.000416,-0.675526384 64.066679,3.75614463 L51,15.4931349 Z" id="Triangle-1-copy-4" fill="#EBEBEB" sketch:type="MSShapeGroup" transform="translate(36.500000, 29.500000) scale(-1, 1) translate(-36.500000, -29.500000) "></path>
+        <rect id="Rectangle-3" fill="#EBEBEB" sketch:type="MSShapeGroup" x="67" y="6" width="14" height="48" rx="8"></rect>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="50px" height="60px" viewBox="0 0 50 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.1 (7597) - http://www.bohemiancoding.com/sketch -->
+    <title>play</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Slices" sketch:type="MSLayerGroup" transform="translate(-950.000000, -110.000000)"></g>
+        <path d="M39.5766053,2.04372979 C45.2142394,-1.44140594 49.7844449,1.10434557 49.7844449,7.74172575 L49.7844449,51.9916076 C49.7844449,58.6236596 45.2189484,61.1777224 39.5766053,57.6897649 L4.77672934,36.1773381 C-0.860904771,32.6922915 -0.865613717,27.0447533 4.77672934,23.5567065 L39.5766053,2.04372979 Z" id="Triangle-1" fill="#F5F5F5" sketch:type="MSShapeGroup" transform="translate(25.284445, 29.500000) scale(-1, 1) translate(-25.284445, -29.500000) "></path>
+    </g>
+</svg>
