@@ -1,0 +1,1005 @@
+body{
+	margin:0;
+	overflow:hidden;
+	background: #000;
+	user-select: none;
+}
+
+
+
+
+#broadcast {
+	position: absolute;
+	display: none;
+/* 	visibility: hidden; */
+	
+}
+
+#menu_debugWindow {
+	position: absolute;
+	top: 70px;
+	left: 32px;
+	width: 320px;
+	height: 240px;
+	background: rgba(0,0,0,0.8);
+	z-index: 20;
+	color: #ccc;
+}
+
+#toast {
+	
+	position: absolute;
+	display: table;
+	width: 100%;
+	height: 100px;
+	top: 483px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+/* 	background: #444; */
+	z-index: 9999999;
+	opacity: 0.97;
+	display: none;
+}
+
+#toastBubble {
+	
+	display: inline-table;
+	margin-top: 15px;
+	padding: 0 40px;
+	height: 70px;
+	background: #444;
+	border-radius: 35px;
+/* 	box-shadow: 0px 0px 20px 12px black; */
+	
+}
+
+
+#toastText {
+	
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 22px;
+	color: #ddd;
+}
+
+
+#outerContainer {
+	width:1280px; 
+	height:720px; 
+	background: #000;
+	/*background: url(../images/new/dotted_back.png) top left;*/
+}
+
+#innerContainer {
+	position: absolute;
+	width:1280px; 
+	height:720px;
+	background: #0b0b0b;
+	/*background: url(../images/chan_back.jpg) top left;*/
+}
+
+#menuContainer {
+	position: absolute;
+	top: 73px;
+	left: 39px;
+}
+
+#menuButtons{
+	position:absolute;
+	width:1280px;
+	height:54px;
+	bottom:0px;	
+	background: #222;
+	border-top: 2px solid #000;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+#buttonContainer {
+/* 	position: absolute; */
+	width: 100%;
+/* 	left: 18px; */
+	text-align: center;
+/* 	background: #ccc; */
+}
+
+
+#topBar {
+	position:absolute;
+	width:1280px;
+	height:54px;
+	line-height:44px;
+	font-size:24px;
+	color: rgb(220,220,220);
+	font-family : inherit;
+	background: #222;
+	border-bottom: 2px solid #000;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+
+#appName {
+	position: absolute;
+	top: 0px;
+	left: 32px;
+	width: 1216px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 20px;
+	color: rgb(220,220,220);
+	text-align: center;
+	opacity: 0.15;
+	display: none;
+}
+
+#appName:hover {
+	opacity: 1;
+}
+
+
+#groupName {
+	position: absolute;
+	top: 0;
+	left: 20px;
+	width: 320px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	height:54px;
+	line-height: 54px;
+	font-size: 24px;
+	color: rgb(220,220,220);
+}
+
+#groupIcon {
+	float: left;
+	width: 40px;
+	height: 54px;
+	background: url(../images/new/groups.png) no-repeat center;
+}
+
+#dvbIcon {
+	float: left;
+	width: 40px;
+	height: 54px;
+	background: url(../icons/small/dvb.png) no-repeat center;
+	background-size: 24px 24px;
+}
+
+#moreInfo {
+	position: absolute;
+	top: 0;
+	font-size: 20px;
+	left: 1092px;
+	height:54px;
+	line-height: 54px;
+	color: #FFCB38;
+	display: none;
+	z-index: 2;
+}
+
+#moreInfo2 {
+	position: absolute;
+	top: 210px;
+	width: 552px;
+	font-size: 20px;
+	left: 662px;
+	color: rgb(200,200,200);
+	background: #1e1e1e;
+	border-radius: 3px;
+	padding: 5px 20px;
+	box-shadow: 3px 3px 10px #000;
+	display: none;
+	z-index: 2;
+	text-align: center;
+}
+
+#moreInfo3 {
+	position: absolute;
+	top: 152px;
+	width: 552px;
+	font-size: 24px !important;
+	left: 662px;
+	color: rgb(200,200,200);
+	background: #1e1e1e;
+	border-radius: 3px;
+	padding: 5px 20px;
+	box-shadow: 3px 3px 10px #000;
+	display: none;
+	z-index: 2;
+	text-align: center;
+}
+
+#moreInfo3 p {
+	
+	font-size: 24px;
+	
+}
+
+#moreInfo4 {
+	position: absolute;
+	top: 183px;
+	width: 512px;
+	font-size: 24px !important;
+	left: 662px;
+	color: rgb(200,200,200);
+	background: #1e1e1e;
+	border-radius: 3px;
+	padding: 5px 40px;
+	box-shadow: 3px 3px 10px #000;
+	display: none;
+	z-index: 2;
+	text-align: center;
+}
+
+#moreInfo4 p {
+	
+	font-size: 24px;
+	
+}
+
+#moreInfo5 {
+	position: absolute;
+	top: 240px;
+	font-size: 28px;
+	left: 570px;
+	color: rgb(200,200,200);
+	background: #1e1e1e;
+	border-radius: 3px;
+	padding: 5px 40px;
+	box-shadow: 3px 3px 10px #000;
+	display: none;
+	z-index: 2;
+}
+
+#macAddress {
+/*
+	position: absolute;
+	top: 0;
+*/
+	font-size: 24px;
+	left: 720px;
+	height:54px;
+	line-height: 54px;
+	color: rgb(200,200,200);
+	display: none;
+	text-align: center;
+	font-size: 24px;
+}
+
+#menuNavigation{
+	position:absolute;
+	height:28px;
+	top:13px;
+	display: none;
+	color: #aaa;
+}
+
+
+.pageNavActive {
+	float: left;
+	margin-right: 12px;
+	padding: 0 4px;
+	min-width: 20px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	border-radius: 3px;
+	box-shadow: inset 0px 0px 0px 2px #aaa;
+	background: #aaa;
+/* 	background: url(../images/new/nav_active.png) no-repeat; */
+	font-size: 18px;
+	color: #000;
+}
+
+.pageNavActive:hover {
+/*
+	width: 28px;
+	height: 28px;
+*/
+/* 	line-height: 28px; */
+	box-shadow: none;
+	/* background: #ad1e50; */
+	color: #ddd;
+}
+
+.pageNavInactive {
+	float: left;
+	margin-right: 12px;
+	padding: 0 4px;
+	min-width: 20px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	border-radius: 3px;
+	box-shadow: inset 0px 0px 0px 2px #aaa;
+	/* border: 2px solid #aaa; */
+/* 	background: url(../images/new/nav_inactive.png) no-repeat; */
+	font-size: 18px;
+	color: #aaa;
+}
+
+.pageNavInactive:hover {
+/*
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	border: none;
+*/
+	/* background: #ad1e50; */
+	box-shadow: none;
+	color: #ddd;
+}
+
+.pageNavSkip {
+	float: left;
+	margin-right: 8px;
+	width: 4px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	/* border: 2px solid #aaa; */
+	/* background: #ccc; */
+	font-size: 18px;
+	color: #aaa;
+}
+
+#userTutorial {
+	width: 100%;
+	height: 612px;
+	position: absolute;
+	top: 54px;
+	left: 0px;
+	background: rgba(0,0,0,0.8);
+/* 	box-shadow: 0px 0px 8px black; */
+	z-index: 100;
+	display: none;
+}
+
+#tutWindow {
+	position: absolute;
+	top: 32px;
+	width: 820px;
+	left: 224px;
+	color: rgb(220,220,220);
+	overflow: hidden;
+	background: rgba(0,0,0,0.85);
+	border-radius: 4px;
+	border: 4px solid rgba(255,255,255,0.35);
+}
+
+#tutWindow p {
+	padding: 0px 30px 0px 30px;
+	font-size: 24px;
+	line-height: 33px;
+	margin: 18px 0;
+}
+
+#closeButton {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 54px;
+	height: 54px;
+	line-height: 54px;
+	font-size: 21px;
+	text-align: center;
+	background: #ccc;
+	background: rgba(0,0,0,0.85);
+	border-bottom-left-radius: 6px;
+/*
+	border-left: 4px solid rgba(255,255,255,0.35);
+	border-bottom: 4px solid rgba(255,255,255,0.35);
+*/
+}
+
+#closeButton img {
+	position: absolute; 
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+/* 	width: 24px; */
+	height: 19px;
+	opacity: 0.7;
+}
+
+#closeButton:hover {
+	background: #a10039;
+/*
+	border-left: 4px solid #555;
+	border-bottom: 4px solid #555;
+*/
+}
+
+#closeButton:hover img {
+	opacity: 0.99;
+}
+
+
+.buttonDescription{	
+/*
+	left:164px;
+	float:left;
+*/
+	display: inline-block;
+/* 	margin-right: 2px; */
+	height:54px;
+	line-height: 54px;
+	font-size:24px;
+	min-width:54px;
+	padding-left:14px;
+	padding-right:14px;
+	padding-top:0px;
+	font-family:LG Display;
+	text-align:center;
+	color:rgb(220,220,220);
+ 	/* border-right: solid 3px #000; */
+ 	background: #222;
+ 	border-radius: 3px;
+}
+
+.buttonDescription.selected {
+	background: url(../images/br_select.png) repeat-y left,url(../images/br_select.png) repeat-y right,url(../images/br_select.png) repeat-x top,url(../images/br_select.png) repeat-x bottom;
+}
+
+.buttonDescription.active {
+	background: url(../images/br_active.png) repeat-y left,url(../images/br_active.png) repeat-y right,url(../images/br_active.png) repeat-x top,url(../images/br_active.png) repeat-x bottom;
+}
+
+.buttonDescription span {
+	font-size: 24px;
+	line-height: 54px;
+	text-decoration: none;
+}
+
+
+
+.chanTime {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	font-size: 24px;
+	height: 54px;
+	line-height: 54px;
+	color: rgb(220,220,220);
+}
+
+.currentTime {
+	float:right;
+	height: 60px;
+	line-height: 60px;
+	display:inline;
+	padding-right: 20px;
+	font-size:20px;
+	font-family:LG Display;
+	color:rgb(235,235,235) ;
+}
+
+
+
+.copyright{
+	position:absolute;
+	height: 54px;
+	top: 0px;
+	right:20px;
+	line-height: 54px;
+	font-size:20px;
+	font-family:LG Display;
+	color:rgb(235,235,235);
+	display: none;
+}
+
+
+
+.eachMenuDefault {
+	position:absolute;
+	font-family:TiresiasScreenfont;
+	background: #1e1e1e;
+	background: url(../images/new/ch_default1.png) no-repeat;
+/* box-shadow: inset -3px -3px 0px 0px #000,inset 3px 3px 0px 0px #000; */
+}
+
+
+.eachMenuSelected
+{
+	position:absolute;
+	font-family:TiresiasScreenfont;
+
+}
+
+.eachMenuSelected .eachMenuName, .eachMenuSelected:active .eachMenuName
+{
+	color:rgb(235,235,235); 
+}
+
+.eachMenuSelected .eachMenuPicon
+{
+	background: url(../images/picon_back_hover.png) no-repeat left;
+}
+
+.eachMenuSelected:active
+{
+	/* background: url(../images/br_active.png) repeat-y left,url(../images/br_active.png) repeat-y right,url(../images/br_active.png) repeat-x top,url(../images/br_active.png) repeat-x bottom, #000; */
+}
+
+.eachMenuSelected .eachMenuNo
+{
+	color:rgb(220,220,220);
+}
+
+.eachMenuBase {
+	position: absolute;
+}
+
+
+.eachMenuNo
+{
+	float: left;
+	margin-left: 14px;
+	height: 48px;
+	line-height: 52px;
+	color: #ccc;
+	font-size: 26px;
+}
+
+.eachMenuName 
+{
+	position: absolute;
+	margin-left: 14px;
+	overflow:hidden;
+	white-space:nowrap;
+	color: #ccc;
+	width: 206px;
+	height: 48px;
+	line-height: 52px;
+	font-size: 26px;
+
+}
+
+.eachMenuNoName {
+	position: absolute;
+	float: left;
+	width: 282px;
+	height: 48px;
+	white-space:nowrap;
+	overflow: hidden;
+/* 	background: #ccc; */
+
+}
+
+.eachMenuName.noNumber {
+	
+	margin-left: 0;
+	width: 265px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.eachMenuPicon
+{
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	height: 36px;
+	padding-left: 25px;
+	background: url(../images/new/picon_back.png) no-repeat left;
+	text-align: right;
+}
+
+.eachMenuPicon img {
+	max-width: 90px;
+	max-height: 24px;
+/* 	margin: 0 15px 0 0; */
+}
+
+.eachMenuArc
+{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 16px; 
+	height: 16px; 
+	background: url(../images/new/ch_arc.png) no-repeat;
+}
+
+
+
+
+.eachMenuEPG {
+	
+	position: absolute;
+	top: 60px;
+	left: 14px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	font-size:24px;
+	font-family:LG Display;
+	height: 48px;
+	width: 265px;
+	line-height: 48px;
+	color: #a2a2a2;
+}
+
+.eachMenuProgress
+{
+	position: absolute;
+	top: 53px;
+	left: 14px;
+	height: 4px;
+	width: 268px;
+	background: RGB(45, 45, 45);
+}
+
+.progSpan {
+	position: absolute;
+	height: 4px;
+}
+
+#page_right {
+	position: absolute;
+	top: 69px;
+	right: 0px;
+	width: 39px;
+	height: 582px;
+	/*background: url(../images/page_right.png) no-repeat left;*/
+/* 	background: url(../images/new/page_right1.png) no-repeat center; */
+	opacity: 0.6;
+	display: none;
+}
+
+#page_right img, #page_left img {
+	
+	position: absolute; 
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	width: 21px;
+	
+}
+
+#page_right:hover {
+	opacity: 0.99;
+	
+}
+
+#page_left {
+	position: absolute;
+	top: 69px;
+	left: 0px;
+	width: 39px;
+	height: 582px;
+	/*background: url(../images/page_left.png) no-repeat left;*/
+/* 	background: url(../images/new/page_left1.png) no-repeat center; */
+	opacity: 0.6;
+	display: none;
+}
+
+
+#page_left:hover {
+	opacity: 0.99;
+}
+
+#numberKeyFieldOuter {
+	width: 100%;
+	height: 612px;
+	position: absolute;
+	top: 54px;
+	left: 0px;
+	/* border-radius: 8px; */
+	background: rgba(0,0,0,0.75);
+	z-index: 99;
+	display: none;
+/* 	border: 4px solid rgba(255,255,255,0.35); */
+}
+
+#numberKeyField {
+	position:absolute;
+	font-family:TiresiasScreenfont;
+	font-size: 30px;
+	left:580px;
+	top:259px;
+	width:126px;
+	height:86px;
+	line-height: 86px;
+	text-align: center;
+	border-radius: 4px;
+	border: 4px solid rgba(255,255,255,0.35);
+	background: rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 8px black;
+	color: rgb(220,220,220);
+/* 	border: 4px solid rgba(255,255,255,0.35); */
+}
+
+#loadingSpinner {
+	
+	position: absolute;
+	top: 296px;
+	left: 576px;
+	width: 128px;
+	height: 128px;
+	line-height: 100px;
+	color: #ccc;
+	text-align: center;
+	background: url(../images/new/spinner1.gif);
+	z-index: 1;
+}
+
+#parentPopUpOuter {
+	width: 100%;
+	height: 612px;
+	position: absolute;
+	top: 54px;
+	left: 0px;
+	/* border-radius: 8px; */
+	background: rgba(0,0,0,0.75);
+	z-index: 100;
+	display: none;
+}
+
+#parentPopUp {
+	
+	position: absolute;
+/* 	top: 200px; */
+	left: 486px;	
+	width: 300px;
+/* 	height: 200px; */
+	border-radius: 4px;
+	border: 4px solid rgba(255,255,255,0.35);
+	background: rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 8px black;
+	
+	
+}
+
+#parentHeader {
+	
+	color:rgb(220,220,220);
+	text-align: center;
+	font-size: 24px;
+	height: 50px;
+	line-height: 50px;
+	margin-top: 5px;
+/* 	border: 1px solid #ccc; */
+}
+
+#parentPIN {
+	width: 50%;
+	margin: 0 auto;	
+	color:rgb(220,220,220);
+	text-align: center;
+	font-size: 26px;
+	height: 40px;
+	line-height: 40px;
+/* 	border: 2px solid #333; */
+	border-radius: 4px;
+	letter-spacing: 4px;
+	margin-bottom: 20px;
+}
+
+#parentKeyboard {
+	
+	width: 100%;
+	display: none;
+}
+
+#parentNumKeys {
+	margin-bottom: 20px;
+	color: #ccc;
+}
+
+.parentNumKey {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 24px;
+	text-align: center;
+	border-radius: 3px;
+/* 	background: #333; */
+/* 	border: 2px solid #333; */
+/* 	margin: 3px; */
+}
+
+.parentNumKey.selected {
+	background: #CB0048;
+}
+
+#parentCtrlKeys {
+	
+	color: #ccc;
+	
+}
+
+.parentCtrlKey {
+	display: inline-block;
+	width: 50%;
+	height: 54px;
+	line-height: 54px;
+/* 	border-radius: 4px; */
+	text-align: center;
+	font-size: 24px;
+}
+
+.parentCtrlKey:hover {
+	
+	background: #CB0048;
+	
+}
+
+#favIcon {
+	width: 40px;
+	height: 54px;
+	line-height: 52px;
+	float: left;
+	color: #fab70d;
+	font-size: 32px;
+
+	text-align: center;
+}
+
+.favSeparator {
+	
+	color: #cbb13a;
+	
+}
+
+.eachMenuGroup
+{
+	position: absolute;
+	margin-left: 14px;
+	overflow:hidden;
+	white-space:nowrap;
+
+	color: #ccc;
+	width: 246px;
+	height: 48px;
+	line-height: 52px;
+	font-size: 26px;
+
+}
+
+.eachGroupPicon {
+	
+
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	
+	width: 20px;
+	height: 24px;
+	padding-left: 25px;
+	padding-bottom: 10px;
+	background: url(../images/new/picon_back.png) no-repeat left;
+	
+}
+
+.eachMenuSelected .eachGroupPicon
+{
+	background: url(../images/picon_back_hover.png) no-repeat left;
+}
+
+
+.eachGroupPicon img {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.eachFavPicon {
+	
+
+	position: absolute;
+	top: 5px;
+	right: 14px;
+	width: 24px;
+	height: 38px;
+	line-height: 39px;
+	color: #fab70d;
+	font-size: 30px;
+
+
+}
+
+.eachDVBPicon {
+	
+
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	background: url(../icons/small/dvb.png) no-repeat center;
+	background-size: 24px 24px;
+	width: 24px;
+	height: 24px;
+
+}
+
+.eachVideoPicon {
+	
+
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	background: url(../icons/avi.png) no-repeat center;
+	background-size: 24px 24px;
+	width: 24px;
+	height: 24px;
+
+}
+
+
+/*
+.eachFavItem {
+	
+	position: absolute;
+	right: -8px;
+	top: -14px;
+	width: 24px;
+	height: 38px;
+	line-height: 48px;
+	color: #f99e0d;
+	font-size: 12px;
+
+}
+*/
+
+.eachFavItem {
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 16px; 
+	height: 16px; 
+	background: url(../images/new/ch_fav.png) no-repeat;
+
+}
+
+.eachGroupItem {
+
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 16px; 
+	height: 16px; 
+	background: url(../images/new/ch_group.png) no-repeat;
+
+}
+
+.eachWatchedItem {
+	position: absolute;
+	top: 50px;
+	right: 19px;
+	width: 15px; 
+	height: 10px; 
+	background: url(../images/new/ch_watched.png) no-repeat;
+	z-index: 1;
+}
+
+.eachTimerItem {
+
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 16px; 
+	height: 16px; 
+	background: url(../images/new/ch_timer.png) no-repeat;
+
+}
+
+.epgHover {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 30px; 
+	height: 16px; 
+	background: url(../images/new/epg_hover.png) no-repeat;
+	z-index: 1;
+}

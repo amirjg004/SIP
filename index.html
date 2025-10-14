@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Access</title>
+
+<script type="text/javascript" src="webOSTVjs-1.1.1/webOSTV.js"></script>
+<script type="text/javascript" src="webOSTVjs-1.1.1/webOSTV-dev.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/keycode.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+<style>
+	
+	body {
+		margin: 0; background: #000; width: 1280px; height: 720px; position: absolute;
+	}
+	
+	#spinner {
+		position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; width: 128px; height: 128px;
+	}
+	
+	#connectMessage, #retryMessage {
+		display: none; position: absolute; bottom: 90px; left: 0; right: 0; margin: auto; width: 628px; height: 128px; word-wrap: break-word; color: #888; font-size: 24px;
+	}
+	
+	#tURL, #idFailed {
+		text-align: center; margin-bottom: 24px;
+	}
+	
+	#tMessage {
+		text-align: center;
+	}
+	
+	#okButton {
+		margin: 0 3px;
+		padding: 4px 12px;
+		border-radius: 4px;
+		background: #666;
+		color: black;
+	}
+	
+	#okButton:hover {
+		background: #cb0048;
+		color: #fff;
+	}
+	
+</style>
+
+</head>
+
+<body>
+		
+		<div id="spinner"><img src="images/new/spinner1.gif" border="0" /></div>
+		
+		<div id="retryMessage">
+			<div id="idFailed">
+				<span id="idWait">Waiting Device ID for</span>
+				<span id="idPassed"></span>
+			</div>
+			<div id="tMessage">Press <span id="okButton">OK</span> to Exit</div>
+		</div>
+		
+		<div id="connectMessage">
+			<div id="tURL">
+				<span id="urlNr">Server</span>
+				<span id="tPassed"></span>
+			</div>
+			<div id="tMessage">Wait or Press <span id="okButton">OK</span> to skip forward</div>
+		</div>
+		
+</body>
+</html>

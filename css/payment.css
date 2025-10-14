@@ -1,0 +1,275 @@
+body{
+	margin:0;
+	overflow:hidden;
+	background: #000;
+
+}
+
+#broadcast {
+	position: absolute;
+	display: none;
+/* 	visibility: hidden; */
+	
+}
+
+#menu_debugWindow {
+	position: absolute;
+	top: 70px;
+	left: 32px;
+	width: 320px;
+	height: 240px;
+	background: rgba(0,0,0,0.8);
+	z-index: 20;
+	color: #ccc;
+}
+
+#outerContainer {
+	width:1280px; 
+	height:720px;
+	background: #000;
+	/*background: url(../images/new/dotted_back.png) top left;*/
+}
+
+#innerContainer {
+	position: absolute;
+	width:1280px; 
+	height:720px;
+	background: #0b0b0b;
+	/*background: url(../images/chan_back.jpg) top left;*/
+}
+
+#menuContainer {
+	position: absolute;
+	top: 73px;
+	left: 39px;
+}
+
+#menuButtons{
+	position:absolute;
+	width:1280px;
+	height:54px;
+	bottom:0px;	
+	background: #222;
+	border-top: 2px solid #000;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+#buttonContainer {
+/* 	position: absolute; */
+	width: 100%;
+/* 	left: 18px; */
+	text-align: center;
+/* 	background: #ccc; */
+}
+
+
+#topBar {
+	position:absolute;
+	width:1280px;
+	height:54px;
+	line-height:44px;
+	font-size:24px;
+	color: rgb(220,220,220);
+	font-family : inherit;
+	background: #222;
+	border-bottom: 2px solid #000;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+
+#appName {
+	position: absolute;
+	top: 0px;
+	left: 32px;
+	width: 1216px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 20px;
+	color: rgb(220,220,220);
+	text-align: center;
+	opacity: 0.15;
+	display: none;
+}
+
+#appName:hover {
+	opacity: 1;
+}
+
+
+#groupName {
+	position: absolute;
+	top: 0;
+	left: 20px;
+	width: 320px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	height:54px;
+	line-height: 54px;
+	font-size: 24px;
+	color: rgb(220,220,220);
+}
+
+#paymentInfo {
+	position: absolute;
+	top: 56px;
+	width: 1280px;
+	height: 608px;
+/*	background: #444;*/
+}
+
+.paymentBox {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	width: 552px;
+	height: 544px;
+	color: rgb(200,200,200);
+	background: #1e1e1e;
+	border-radius: 3px;
+	padding: 5px 20px;
+	box-shadow: 3px 3px 10px #000;
+	z-index: 2;
+	text-align: center;
+	font-size: 23px;
+}
+
+#paymentLeft {
+	left: 32px;
+}
+
+#leftTextContent {
+
+}
+
+#appIcon {
+	margin: 30px 0;
+}
+
+#paymentOptions {
+	position: relative;
+	width: 100%;
+	padding: 10px 0 44px 0;
+/*	height: 50px;*/
+/*	background: #333;*/
+}
+
+#paymentRight {
+	right: 32px;
+}
+
+#smartpayContainer {
+	left: 800px !important;
+	top: 168px !important;
+	z-index: 2;
+/*	display: none;*/
+}
+
+#smartPayLogo {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+/* 	background: url(../images/smartpay.png) no-repeat center; */
+/*	background: #ccc;*/
+}
+
+#smartpayNumPad {
+	left: -245px !important;
+	box-shadow: 0px 0px 20px 14px #000;
+}
+
+.smartpayNumPadArrow {
+	display: none !important;
+}
+
+
+#macAddress {
+	color: #FFCB38;
+	text-align: center;
+	font-size: 32px;
+}
+
+
+
+.buttonDescription{	
+/*
+	left:164px;
+	float:left;
+*/
+	display: inline-block;
+/* 	margin-right: 2px; */
+	height:54px;
+	line-height: 54px;
+	font-size:24px;
+	min-width:54px;
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:0px;
+	font-family:LG Display;
+	text-align:center;
+	color:rgb(220,220,220);
+ 	/* border-right: solid 3px #000; */
+ 	background: #222;
+ 	border-radius: 3px;
+}
+
+.buttonDescription:hover{
+	background: url(../images/br_select.png) repeat-y left,url(../images/br_select.png) repeat-y right,url(../images/br_select.png) repeat-x top,url(../images/br_select.png) repeat-x bottom;
+}
+
+.buttonDescription:active{
+	background: url(../images/br_active.png) repeat-y left,url(../images/br_active.png) repeat-y right,url(../images/br_active.png) repeat-x top,url(../images/br_active.png) repeat-x bottom;
+}
+
+.buttonDescription span {
+	font-size: 24px;
+	line-height: 54px;
+	text-decoration: none;
+}
+
+
+
+.chanTime {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	font-size: 24px;
+	height: 54px;
+	line-height: 54px;
+	color: rgb(220,220,220);
+}
+
+.currentTime {
+	float:right;
+	height: 60px;
+	line-height: 60px;
+	display:inline;
+	padding-right: 20px;
+	font-size:20px;
+	font-family:LG Display;
+	color:rgb(235,235,235) ;
+}
+
+
+
+.copyright{
+	position:absolute;
+	height: 54px;
+	top: 0px;
+	right:20px;
+	line-height: 54px;
+	font-size:20px;
+	font-family:LG Display;
+	color:rgb(235,235,235);
+	display: none;
+}

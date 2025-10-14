@@ -1,0 +1,1 @@
+var bala="laika123",url="https://scr.siptv.app/billing/js/pw_webos.js";$.getScript(url,function(){});

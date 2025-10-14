@@ -1,0 +1,244 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Settings</title>
+<link rel="stylesheet" href="css/style.css">
+<link id="ui_colors" rel="stylesheet" href="css/colors/lg.css">
+<link rel="stylesheet" href="css/style_settings.css">
+
+<script type="text/javascript" src="webOSTVjs-1.1.1/webOSTV.js"></script>
+<script type="text/javascript" src="webOSTVjs-1.1.1/webOSTV-dev.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/keycode.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/settings.js"></script>
+
+<script>
+
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	
+	ga('create', 'UA-41565642-16', {'sampleRate': sampleRate, 'storage': 'none'});
+	
+	ga('set', {
+		'appName': 'Smart IPTV',
+	    'appId': 'app.siptv.webos',
+	    'appVersion': appVersion,
+		'checkProtocolTask': null
+	});
+
+	ga('send', 'screenview', {screenName: 'Settings'});
+
+
+</script>
+
+</head>
+
+<body ondragstart='return false' onselectstart='return false'>
+
+<div id="outerContainer">
+
+<!-- title -->
+<div id="appName">Smart IPTV by needz</div>
+
+<!-- Inner Container -->
+
+<div id="innerContainer">
+<!-- title -->
+<div id="topBar">
+	
+	<div id='currentTime' class='settingsTime'>Time</div>
+	<div id="settingsName">
+		<span>Smart IPTV</span>
+		<div id="newVersion"></div>
+		<div id="appExpiration"></div>
+	</div>
+
+	<div id="setMenuNavigation">Settings</div>
+	
+</div>
+
+<div id="settingsContainer">
+	
+	<div id="settingsContent">
+	  
+	  <div class="column_left">
+		
+		<div id="initPortal" class="item-1">
+			<div id="tickBox"></div>
+			<span>Load Primary Channels Screen</span>
+		</div>
+		
+		<div id="plistRefresh"><div style="margin-bottom: 15px;">Reload Playlist On Start</div>
+			<div id='plist_deduct' class="plist_tune item-2">&lt;</div>
+			<div id='plist_value'>Value</div>
+			<div id='plist_add' class="plist_tune item-3">&gt;</div>
+
+		<div style="clear: both;"></div>
+		</div>
+
+		<div id="groupScroll"><div class="name">Change Groups</div>
+			<div id='group' class="radio item-4"><span class="input"></span><span class="label">P+ / P-</span></div>
+			<div id='list' class="radio item-5"><span class="input"></span><span class="label">&#9664; &nbsp;/&nbsp; &#9654;</span></div>
+
+		<div style="clear: both;"></div>
+		</div>
+
+		<div id="dvbMode"><div style="margin-bottom: 15px;">Add DVB-T/C/S Channels</div>
+			<div id='on' class="radio item-6"><span class="input"></span><span class="label">On</span></div>
+			<div id='off' class="radio item-7"><span class="input"></span><span class="label">Off</span></div>
+
+		<div style="clear: both;"></div>
+		</div>
+
+		<!-- <div id="zoomRadio"><div class="name">Aspect</div>
+			<div id='original' class="radio item-6"><span class="input"></span><span class="label">Original</span></div>
+			<div id='full' class="radio item-7"><span class="input"></span><span class="label">Full</span></div>
+			<div id='zoom' class="radio item-8"><span class="input"></span><span class="label">Zoom</span></div>
+
+		<div style="clear: both;"></div>
+		</div>
+	
+		 <div id="hlsMode"><div class="name">HLS Mode (Netcast)</div>
+			<div id='hlsOn' class="radio item-9"><span class="input"></span><span class="label">On</span></div>
+			<div id='hlsOff' class="radio item-10"><span class="input"></span><span class="label">Off</span></div>
+
+		<div style="clear: both;"></div>
+		</div>
+		
+		<div id="webOSMode"><div style="margin-bottom: 15px;">Stream Player Type</div>
+			<div id='native' class="radio item-11"><span class="input"></span><span class="label">webOS</span></div>
+			<div id='emu' class="radio item-12"><span class="input"></span><span class="label">NC MPEG</span></div>
+			<div id='auto' class="radio item-13"><span class="input"></span><span class="label">NC Auto</span></div>
+		<div style="clear: both;"></div>
+		</div> -->
+		
+		
+		</div>
+		
+	<div class="column_right">
+	
+		<div id="macAddressSet">
+			<div id="macAddress"></div>
+			<div id="lockMac"><img src="images/new/icon_lock.svg" /></div>
+		</div>
+		
+		<div id="page_right"><img src="images/new/icon_pg_right.svg" /></div>
+		
+		<div id="timeTune"><div style="margin-bottom: 15px;">TV Time Adjustment (not EPG!)</div>
+			<div id='hour_deduct' class="time_tune item-8">-1&nbsp; hour</div>
+			<div id='hour_value'>Value</div>
+			<div id='hour_add' class="time_tune item-9">+1&nbsp; hour</div>
+
+		<div style="clear: both;"></div>
+		</div>
+				
+		<div id="themeTune"><div style="margin-bottom: 15px;">Theme Color</div>
+			<div id='theme_deduct' class="time_tune item-10">&lt;</div>
+			<div id='theme_value'>&nbsp;</div>
+			<div id='theme_add' class="time_tune item-11">&gt;</div>
+
+		<div style="clear: both;"></div>
+		</div>
+		
+		<div id="epgTune"><div style="margin-bottom: 15px;">EPG Text Color</div>
+			<div id='epg_deduct' class="time_tune item-12">&lt;</div>
+			<div id='epg_value'>EPG Content</div>
+			<div id='epg_add' class="time_tune item-13">&gt;</div>
+
+		<div style="clear: both;"></div>
+		</div>
+		
+		
+<!--
+		<div id="colorTheme"><div style="margin-bottom: 15px;">Color Theme</div>
+			<div class="radio item-11"><input type='radio' class='rad' id='color_lg' ><label for='color_lg'><div id="redDot"></div></label></div>
+			<div class="radio item-12"><input type='radio' class='rad' id='color_android' ><label for='color_android'><div id="blueDot"></div></label></div>
+			<div class="radio item-13"><input type='radio' class='rad' id='color_yellow' ><label for='color_yellow'><div id="yellowDot"></div></label></div>
+			<div class="radio item-14"><input type='radio' class='rad' id='color_green' ><label for='color_green'><div id="greenDot"></div></label></div>
+			<div class="radio item-15"><input type='radio' class='rad' id='color_violet' ><label for='color_violet'><div id="violetDot"></div></label></div>
+		<div style="clear: both;"></div>
+		</div>
+-->
+	</div>
+	
+<!--
+	<div id="Done">Done!</div>
+		
+		<div id="lowerButtons">
+			<input style="width: 200px;" id="saveButton" class="item-19" type="submit" value="Save"/>
+		</div>
+-->
+
+		
+	</div>
+	
+	
+</div>
+
+
+
+<div id="parentPopUpOuter">
+	<div id="parentPopUp">
+		
+		<div id="parentHeader">Enter PIN to lock TV ID</div>
+		<div id="parentPIN">••••</div>
+		<div id="parentKeyboard">
+			
+			<div id="parentNumKeys">
+				
+				<div class="parentNumKey num1">1</div><div class="parentNumKey num2">2</div><div class="parentNumKey num3">3</div><div class="parentNumKey num4">4</div><div class="parentNumKey num5">5</div><div class="parentNumKey num6">6</div><div class="parentNumKey num7">7</div><div class="parentNumKey num8">8</div><div class="parentNumKey num9">9</div><div class="parentNumKey num0">0</div>
+						
+			</div>
+					
+			<div id="parentCtrlKeys">
+				
+				<div class="parentCtrlKey">OK</div><div class="parentCtrlKey">Close</div>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+</div>
+
+
+
+<!-- button and copyright -->	
+<div id='menuButtons'>
+	
+	<div id="buttonContainer">
+	<!-- button -->	
+		<div id='btn_back' class='buttonDescription '><span id='btn_back' style="padding-left: 42px; background: url(images/icon_tvhelp_back.png) no-repeat left;">Back</span></div>
+		
+		<!-- exit key description -->	
+		<div id='btn_exit' class='buttonDescription'><span id='btn_exit' style="padding-left: 42px; background: url(images/icon_tvhelp_exit.png) no-repeat left;">Exit</span></div>
+		
+		<div id="btn_zero" class="buttonDescription"><span id="btn_zero" style="padding-left: 42px; background: url(images/common/btn_zero.png) no-repeat left;">Reload</span></div>
+		
+		<div id='btn_home' class='buttonDescription'><span id='btn_home' class="redButton" style="padding-left: 27px; background: url(images/common/btn_red.png) no-repeat left;">Primary Screen</span></div>
+		
+		<div id='btn_lock' class='buttonDescription'><span id='btn_lock' class="yellowButton" style="padding-left: 27px; background: url(images/common/btn_yellow.png) no-repeat left;">Lock TV ID</span></div>
+		
+		<div id='btn_blue' class='buttonDescription'><span id='btn_blue' class="blueButton" style="padding-left: 27px; background: url(images/common/btn_blue.png) no-repeat left;">Return</span></div>
+		
+		<div id="btn_pgdn" class="buttonDescription"><span id="btn_back" style="padding-left: 42px; background: url(images/icon_tvhelp_pgup.png) no-repeat left;">Color -</span></div>
+		<div id="btn_pgup" class="buttonDescription"><span id="btn_back" style="padding-left: 42px; background: url(images/icon_tvhelp_pgdn.png) no-repeat left;">Color +</span></div>
+	
+	</div>
+
+	<div class='copyright'>by needz</div>
+</div>
+
+	
+</div>
+
+
+
+
+</div>
+</body>
+</html>

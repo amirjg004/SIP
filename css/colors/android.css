@@ -1,0 +1,87 @@
+/* Channel list */
+
+.pageNavActive:hover {
+	background: #2567a9;
+}
+
+.pageNavInactive:hover {
+	background: #2567a9;
+}
+
+.eachMenuSelected
+{
+	background: url(../../images/new/ch_selected_android.png) no-repeat;
+}
+
+.eachMenuSelected:active
+{
+	background: url(../../images/new/ch_active_android.png) no-repeat;
+}
+
+.progSpan {
+	background: #2567a9;
+}
+
+/* Fullscreen */
+
+.bar, #progRunner, .controlButton:hover {
+	background: #2567a9;
+}
+
+#menu_bar {
+	background: #2567a9;
+}
+
+.selected {
+	
+	background: url(../../images/new/br_select_android.png) repeat-x top,url(../../images/new/br_select_android.png) repeat-x bottom;
+	
+}
+
+.bitrate, #bufferingText, .groupSeparator {
+	color: #2567a9;
+}
+
+.fs_eachMenuSelected 
+{
+	background: url(../../images/new/br_select_android.png) repeat-x top,url(../../images/new/br_select_android.png) repeat-x bottom;
+}
+
+.fs_eachMenuSelected:active
+{
+	background: url(../../images/new/br_active_android.png) repeat-x top,url(../../images/new/br_active_android.png) repeat-x bottom;
+}
+
+.arc_eachMenuSelected
+{
+	background: url(../../images/new/br_select_android.png) repeat-x top,url(../../images/new/br_select_android.png) repeat-x bottom;
+}
+
+.arc_eachMenuSelected.arcEven
+{
+	background: url(../../images/new/br_select_android.png) repeat-x top,url(../../images/new/br_select_android.png) repeat-x bottom, #0e0e0e;
+}
+
+.arc_eachMenuSelected.arcOdd
+{
+	background: url(../../images/new/br_select_android.png) repeat-x top,url(../../images/new/br_select_android.png) repeat-x bottom, #1f1f1f;
+}
+
+.arc_eachMenuSelected:active
+{
+	background: url(../../images/new/br_active_android.png) repeat-x top,url(../../images/new/br_active_android.png) repeat-x bottom;
+}
+
+.arc_eachMenuSelected:active.arcEven
+{
+	background: url(../../images/new/br_active_android.png) repeat-x top,url(../../images/new/br_active_android.png) repeat-x bottom, #0e0e0e;
+}
+
+.arc_eachMenuSelected:active.arcOdd
+{
+	background: url(../../images/new/br_active_android.png) repeat-x top,url(../../images/new/br_active_android.png) repeat-x bottom, #1f1f1f;
+}
+
+.button:hover, .pref_button:hover {
+	background: url(../../images/new/fs_button_hover_android.png) no-repeat;
+}

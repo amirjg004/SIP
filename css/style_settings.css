@@ -1,0 +1,608 @@
+#settingsName {
+	position: absolute;
+	top: 0;
+	left: 20px;
+	height:54px;
+	line-height: 56px;
+	font-size: 24px;
+	color: rgb(220,220,220);
+}
+
+#newVersion, #appExpiration {
+	display: inline-block;
+	
+}
+
+#appExpiration {
+	color: #FFCB38;
+	margin-left: 5px;
+}
+
+
+h1 {
+	color: white;
+	font-size: 30px;
+	margin: 15px 0px !important;
+/* 	border: 1px solid; */
+}
+
+.settingsTime {
+	position: absolute;
+	display: inline;
+	right: 20px;
+	font-size: 24px;
+	color: #F4F4F4;
+	height: 54px;
+	line-height: 54px;
+}
+
+#setMenuNavigation{
+	position:absolute;
+	height:54px;
+	width: 100px;
+	left: 590px;
+	color: rgb(220,220,220);
+	line-height: 54px;
+	font-size: 24px;
+}
+
+#settingsContainer {
+	position: absolute;
+	top: 102px;
+	left: 32px;
+	width: 1216px;
+	height: 564px;
+}
+
+.column_left {
+	float: left;
+	width: 570px;
+	height: 480px;
+	margin: 10px 40px 0 18px;
+/* 	border: 1px solid #ccc; */
+}
+
+.column_right {
+	width: 570px;
+	float: left;
+	height: 480px;
+	margin: 10px 0 0 0;
+/* 	border: 1px solid #ccc; */
+}
+
+input, textarea, select {
+   -webkit-appearance: none;
+   
+}
+
+input#check {
+   float: left;
+   margin-left: 60px;
+   margin-right: 20px;
+   width: 40px;
+   height: 30px;
+   background: url(../images/settings/check_radio.png) no-repeat;
+   background-position-x: 3px;
+}
+
+
+#tickBox {
+   float: left;
+   margin-left: 60px;
+   margin-right: 20px;
+   margin-top: 3px;
+   width: 40px;
+   height: 30px;
+   background: url(../images/settings/check_radio.png) no-repeat;
+   background-position-x: 3px;
+}
+
+#tickBox2 {
+   
+}
+
+
+#initPortal {
+	color:rgb(220,220,220);
+	text-align: left;
+	padding: 10px 0px;
+	margin-bottom: 42px;
+	font-size: 26px;
+	line-height: 40px;
+	background-color: #2a2a2a;
+	border-radius: 4px;
+}
+
+#initPortal label {
+	color:rgb(220,220,220);
+}
+
+/*
+#initPortal:hover {
+	background: url(../images/br_select.png) repeat-y left,url(../images/br_select.png) repeat-y right,url(../images/br_select.png) repeat-x top,url(../images/br_select.png) repeat-x bottom, #2a2a2a;
+}
+*/
+
+
+.item-1.selected {
+	background: url(../images/br_select.png) repeat-y left,url(../images/br_select.png) repeat-y right,url(../images/br_select.png) repeat-x top,url(../images/br_select.png) repeat-x bottom, #2a2a2a;
+}
+
+#macAddressSet {
+	position: relative;
+	width: 570px;
+   margin-bottom: 42px;
+   height: 40px;
+	color:rgb(220,220,220);
+	
+	padding: 10px 0px;
+	
+	background-color: #2a2a2a;
+	border-radius: 4px;
+}
+
+#macAddress {
+	
+	display: block;
+	text-align: center;
+	font-size: 26px;
+	height: 40px;
+	line-height: 40px;
+	
+	
+}
+
+#lockMac {
+	
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	right: 18px;
+	width: 20px;
+	height: 20px;
+	
+	display: none;
+	
+}
+
+#lockMac img {	
+	
+	position: absolute; 
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+/* 	width: 24px; */
+	width: inherit;
+	height: inherit;
+	opacity: 0.7;
+	
+	
+}
+
+
+#timeTune {
+	color:rgb(220,220,220);
+	text-align: center;
+	font-size: 26px;
+	margin-bottom: 42px;
+	text-align: center;
+}
+
+#themeTune {
+	color:rgb(220,220,220);
+	text-align: center;
+	font-size: 26px;
+	margin-bottom: 42px;
+	text-align: center;
+}
+
+#epgTune {
+	color:rgb(220,220,220);
+	text-align: center;
+	font-size: 26px;
+	margin-bottom: 42px;
+	text-align: center;
+}
+
+#colorTheme {
+	color:rgb(220,220,220);
+	text-align: center;
+	font-size: 26px;
+	margin-bottom: 42px;
+	
+}
+
+
+
+input#hours0, input#hours2, input#hours3, input#hours4, input#hours5 {
+	float: left;
+	margin: 11px 12px 0 5px;
+	width: 30px;
+	height: 30px;
+   background: url(../images/settings/check_radio.png) no-repeat;
+   background-position-x: -78px;
+}
+
+#buffer_add, #buffer_value, #buffer_deduct, #plist_add, #plist_value, #plist_deduct {
+	
+	display: inline-block;
+
+	width: 185px;
+	height: 50px;
+	background-color: #2a2a2a;
+	line-height: 50px;
+}
+
+
+#hour_add, #hour_value, #hour_deduct {
+	
+	display: inline-block;
+
+	width: 185px;
+	height: 50px;
+	background-color: #2a2a2a;
+	line-height: 50px;
+}
+
+#theme_add, #theme_value, #theme_deduct {
+	
+	display: inline-block;
+
+	width: 185px;
+	height: 50px;
+	background-color: #2a2a2a;
+	line-height: 50px;
+}
+
+#theme_value {
+	outline-style: solid;
+	outline-width: 3px;
+	outline-offset: -16px;
+}
+
+#epg_add, #epg_value, #epg_deduct {
+	
+	display: inline-block;
+
+	width: 185px;
+	height: 50px;
+	background-color: #2a2a2a;
+	line-height: 50px;
+}
+
+#epg_value {
+	color: #A2A2A2;
+}
+
+
+
+.time_tune.selected {
+	background: url(../images/br_select.png) repeat-y left,url(../images/br_select.png) repeat-y right,url(../images/br_select.png) repeat-x top,url(../images/br_select.png) repeat-x bottom, #2a2a2a;
+}
+
+
+
+.item-2, .item-4, .item-6, .item-8, .item-10, .item-12, .item-14, .item-16, .item-18, .item-20 {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.item-3, .item-5, .item-7, .item-9, .item-11, .item-13, .item-15, .item-17, .item-19, .item-21  {
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+input#color_lg, input#color_android, input#color_yellow, input#color_green, input#color_violet {
+	float: left;
+	margin: 11px 12px 0 5px;
+	width: 30px;
+	height: 30px;
+   background: url(../images/settings/check_radio.png) no-repeat;
+   background-position-x: -78px;
+}
+
+.radio.item-11, .radio.item-12, .radio.item-13, .radio.item-14, .radio.item-15  {
+	float: left;
+	width: 94px;
+	padding: 0px 10px;
+	height: 50px;
+	background-color: #2a2a2a;
+	line-height: 50px;
+	text-align: left;
+}
+
+#redDot {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-top: 15px;
+	background: #cb0048;
+	border-radius: 2px;
+	opacity: 0.85;
+}
+
+#blueDot {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-top: 15px;
+	background: #0067CC;
+	border-radius: 2px;
+	opacity: 0.85;
+}
+
+#yellowDot {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-top: 15px;
+	background: #CE840F;
+	border-radius: 2px;
+	opacity: 0.85;
+}
+
+#greenDot {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-top: 15px;
+	background: #1f8227;
+	border-radius: 2px;
+	opacity: 0.85;
+}
+
+#violetDot {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-top: 15px;
+	background: #5839d4;
+	border-radius: 2px;
+	opacity: 0.85;
+}
+
+input#original, input#full, input#zoom {
+	float: left;
+	margin: 11px 12px 0 5px;
+	width: 30px;
+	height: 30px;
+   background: url(../images/settings/check_radio.png) no-repeat;
+   background-position-x: -78px;
+
+}
+
+.radio {
+	float: left;
+	width: 170px;
+	padding: 0px 10px;
+	background-color: #2a2a2a;
+	line-height: 50px;
+	text-align: left;
+}
+
+
+
+
+
+
+#webOSMode {
+	color:rgb(220,220,220);
+	text-align: center;
+	font-size: 26px;
+	
+}
+
+#dvbMode {
+	color:rgb(220,220,220);
+	text-align: center;
+	font-size: 26px;
+	margin-bottom: 42px;
+	
+}
+
+input#group, input#list {
+	float: left;
+	margin: 11px 12px 0 5px;
+	width: 30px;
+	height: 30px;
+   background: url(../images/settings/check_radio.png) no-repeat;
+   background-position-x: -78px;
+}
+
+#group, #list, #clockToggle, #aspectRatio, #on, #off, #hlsOn, #hlsOff, #native, #emu, #auto {
+	position: relative;
+	right: 0;
+ }
+ 
+ span.input {
+	 display: inline-block;
+	 margin: 10px 2px 0 5px;
+	 width: 30px;
+	 height: 30px;
+	 background: url(../images/settings/check_radio.png) no-repeat;
+	 background-position: -78px center;
+ }
+ 
+ span.label {
+	 color: rgb(220,220,220);
+	 position: absolute;
+	 margin: 0 0 0 12px;
+ }
+
+
+#zoomRadio {
+	display: table;
+	color:rgb(220,220,220);
+	text-align: center;
+	font-size: 26px;
+	margin-bottom: 30px;
+}
+
+#zoomRadio .name {
+	display: table-cell;
+	width: 114px;
+	vertical-align: middle;
+	text-align: left;
+}
+
+#zoomRadio .radio {
+	display: table-cell;
+	vertical-align: middle;
+	width: 132px;
+	background-color: #2a2a2a;
+	text-align: left;
+	height: 50px;
+	vertical-align: middle;
+}
+
+#plistRefresh {
+	color:rgb(220,220,220);
+	text-align: center;
+	font-size: 26px;
+	margin-bottom: 42px;
+	
+}
+
+#plistRefresh .radio {
+	float: left;
+	width: 170px;
+	padding: 0px 10px;
+	background-color: #2a2a2a;
+	line-height: 50px;
+	text-align: left;
+}
+
+
+#groupScroll {
+	color:rgb(220,220,220);
+	text-align: center;
+	font-size: 26px;
+	margin-bottom: 42px;
+}
+
+#groupScroll .name {
+	margin-bottom: 15px;
+}
+
+#groupScroll .radio {
+	float: left;
+	width: 265px;
+	height: 50px;
+	padding: 0px 10px;
+	background-color: #2a2a2a;
+	line-height: 50px;
+	text-align: left;
+}
+
+
+/* #groupScroll {
+	display: table;
+	color:rgb(220,220,220);
+	text-align: center;
+	font-size: 26px;
+	margin-bottom: 30px;
+}
+
+
+
+#groupScroll .radio {
+	display: table-cell;
+	vertical-align: middle;
+	background-color: #2a2a2a;
+	text-align: left;
+	height: 50px;
+	vertical-align: middle;
+} */
+
+
+#hlsMode {
+	display: table;
+	color:rgb(220,220,220);
+	text-align: center;
+	font-size: 26px;
+	margin-bottom: 42px;
+}
+
+#hlsMode .name {
+	display: table-cell;
+	width: 250px;
+	vertical-align: middle;
+	text-align: left;
+}
+
+#hlsMode .radio {
+	display: table-cell;
+	position: relative;
+	width: 140px;
+	height: 50px;
+	vertical-align: middle;
+	padding: 0px 10px;
+	background-color: #2a2a2a;
+	text-align: left;
+}
+
+#webOSMode .radio {
+	float: left;
+	width: 170px;
+	padding: 0px 10px;
+	background-color: #2a2a2a;
+	line-height: 50px;
+	text-align: left;
+}
+
+#dvbMode .radio {
+	float: left;
+	width: 265px;
+	height: 50px;
+	padding: 0px 10px;
+	background-color: #2a2a2a;
+	line-height: 50px;
+	text-align: left;
+}
+
+
+input#saveButton {
+	background-color: #2a2a2a;
+	color:rgb(220,220,220);
+	font-size: 28px;
+	border-radius: 4px;
+	border: 3px solid #444;
+	padding: 10px;
+	box-shadow: 1px 1px 4px #000;
+	font-family: LG Display;
+}
+
+input#saveButton:hover {
+	background: url(../images/br_select.png) repeat-y left,url(../images/br_select.png) repeat-y right,url(../images/br_select.png) repeat-x top,url(../images/br_select.png) repeat-x bottom, #2a2a2a;
+}
+
+input#saveButton:active {
+	border: 3px solid #a5697a;
+}
+
+.selected {
+	background: url(../images/br_select.png) repeat-y left,url(../images/br_select.png) repeat-y right,url(../images/br_select.png) repeat-x top,url(../images/br_select.png) repeat-x bottom, #2a2a2a;
+}
+
+
+#lowerButtons {
+	position: absolute;
+	bottom: 2px;
+	right: 181px;
+	width: 221px;
+	
+}
+
+
+#Done {
+	position: absolute;
+	bottom: 17px;
+	right: 80px;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	display: none;
+}

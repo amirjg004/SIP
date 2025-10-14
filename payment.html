@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Payment</title>
+
+<link rel="stylesheet" href="css/payment.css">
+<link rel="stylesheet" href="https://siptv.app/billing/stripe/app/css/stripe_tv_key.css">
+
+<script type="text/javascript" src="webOSTVjs-1.1.1/webOSTV.js"></script>
+<script type="text/javascript" src="webOSTVjs-1.1.1/webOSTV-dev.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="https://js.stripe.com/v3/"></script>
+<script type="text/javascript" src="https://js.braintreegateway.com/web/3.46.0/js/client.min.js"></script>
+<script type="text/javascript" src="js/keycode.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/payment.js"></script>
+
+</head>
+
+<body ondragstart="return false" onselectstart="return false">
+
+<div id="outerContainer">
+
+<!-- title -->
+<div id="appName">Smart IPTV by needz</div>
+
+<!-- Inner Container -->
+
+<div id="innerContainer">
+	
+<!-- 	<div id="menu_debugWindow"></div> -->
+	
+	<div id="topBar">
+	
+		<div id="currentTime" class="chanTime">Time</div>
+		<div id="groupName">Smart IPTV Activation</div>
+	
+	</div>
+	
+	<div id="paymentInfo">
+	
+		<div id="paymentLeft" class="paymentBox">
+			
+			<div id="leftTextContent">
+			
+				<p style="font-size: 30px; color: #FFCB38;">Limited time test period is over.</p>
+				
+				<p style="font-size: 26px; margin-bottom: 48px;">You can continue using the application<br /> after one time activation fee.</p>
+				
+				<p style="font-size: 26px;">Available activation options:<br /> <span style="color: #FFCB38;">activate.siptv.app</span></p>
+				
+				<div id="paymentOptions"></div>
+				
+				<p style="font-size: 27px; margin-bottom: 18px !important;">Use this TV ID for reference:</p>
+	
+				<div id="macAddress"></div>
+
+			</div>
+			
+		</div>
+		
+		<div id="paymentRight" class="paymentBox">
+			<p>Or use an in-app purchase option below:</p>
+			
+				<div id="formContainer">
+				
+				<div id="circle_border">
+					
+				</div>
+				
+				<div id="boxHeader">
+					
+					<div id="credit_cards">
+						
+					</div>
+					
+				</div>	
+				
+				<div id="payment-form">
+				  
+				  <div id="card_number" class='inputBox' title="Card number">
+				    
+				      <div class='inputs' style="width: 80%;" title="19">
+					      <span class="text">Card number</span>
+					      <span class="cursor">&#10073;</span>
+					  </div>
+				    
+				  </div>
+				  
+				  <div id="expiration" >
+	<!-- 			    <span>Expires</span> -->
+				    
+					   <div id="month" class='inputBox' title="MM">
+					    	<div class='inputs' style="width: 60px;" title="2">
+						    	<span class="text">MM</span>
+								<span class="cursor">&#10073;</span>
+						    </div>
+					   </div>
+					    <div id="year" class='inputBox' title="YY">
+					    	<div class='inputs' style="width: 60px;" title="2">
+						    	<span class="text">YY</span>
+								<span class="cursor">&#10073;</span>
+					    	</div>
+					    </div>
+					  
+					  
+					  <div id="cvc" class='inputBox' title="CVV">
+		<!-- 			    <span>CVC</span> -->
+					    
+					      <div class='inputs' style="width: 90px;" title="3">
+						      <span class="text">CVV</span>
+							  <span class="cursor">&#10073;</span>
+					      </div>
+					    
+					  </div>
+				  
+				  </div>
+				  
+				  
+				  
+				  <div id="submitButton">
+					  <div class="stripe_button">
+					  	<span>Activate â‚¬5.49</span>
+					  </div>
+				  </div>
+				
+				</div>
+				
+				<div id="statusBox">
+					<div id="statusText">
+						<div id="poweredBy">
+							
+						</div>
+					</div>
+					
+				</div>
+				
+				<div id="payKeyboard">
+					<div id="payNumKeys">
+								
+						<div class="payNumKey num1">1</div><div class="payNumKey num2">2</div><div class="payNumKey num3">3</div><div class="payNumKey num4">4</div><div class="payNumKey num5">5</div><div class="payNumKey num6">6</div><div class="payNumKey num7">7</div><div class="payNumKey num8">8</div><div class="payNumKey num9">9</div><div class="payNumKey num10">0</div><div id="eraseKey" class="payCtrlKey num11">&larr;</div><div id="hideKey" class="payCtrlKey num12">&darr;</div>
+										
+					</div>
+				</div>
+				
+				
+			</div>
+			
+		
+		</div>
+	
+	</div>
+
+<div id="menuButtons">
+	
+	<!-- button -->	
+	<div id="buttonContainer">
+<!-- 		<div id="btn_back" class="buttonDescription"><span id="btn_back" style="padding-left: 42px; background: url(images/icon_tvhelp_back.png) no-repeat left;">Back</span></div> -->
+		
+		<!-- exit key description -->	
+		<div id="btn_exit" class="buttonDescription"><span id="btn_exit" style="padding-left: 42px; background: url(images/icon_tvhelp_exit.png) no-repeat left;">Exit</span></div>
+		
+<!--
+		<div id="btn_info" class="buttonDescription"><span id="btn_back" style="padding-left: 42px; background: url(images/icon_tvhelp_info.png) no-repeat left;">Help</span></div>
+	
+		<div id="btn_archive" class="buttonDescription"><span id="btn_archive" style="padding-left: 42px; background: url(images/icon_tvhelp_green.png) no-repeat left;">EPG</span></div>
+		
+		<div id="btn_all" class="buttonDescription"><span id="btn_all" style="padding-left: 42px; background: url(images/icon_tvhelp_yellow.png) no-repeat left;">All Channels</span></div>
+		<div id="btn_group" class="buttonDescription"><span id="btn_back" style="padding-left: 42px; background: url(images/icon_tvhelp_blue.png) no-repeat left;">Groups</span></div>
+		<div id="btn_pgdn" class="buttonDescription"><span id="btn_back" style="padding-left: 42px; background: url(images/icon_tvhelp_pgup.png) no-repeat left;">Page -</span></div>
+		<div id="btn_pgup" class="buttonDescription"><span id="btn_back" style="padding-left: 42px; background: url(images/icon_tvhelp_pgdn.png) no-repeat left;">Page +</span></div>
+-->
+	</div>
+	
+
+	<!-- copyright -->
+	<div class="copyright">by needz</div>
+</div>
+
+	
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>

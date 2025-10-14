@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Channel List</title>
+<link rel="stylesheet" href="css/style.css">
+<link id="ui_colors" rel="stylesheet" href="css/colors/lg.css">
+
+<script type="text/javascript" src="webOSTVjs-1.1.1/webOSTV.js"></script>
+<script type="text/javascript" src="webOSTVjs-1.1.1/webOSTV-dev.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/keycode.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/chan_list.js"></script>
+<script type="text/javascript" src="js/chan_list_gr.js"></script>
+<script type="text/javascript" src="js/marquee.js"></script>
+<script type="text/javascript" src="js/inline.js"></script>
+
+<!--
+<script>
+
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	
+	ga('create', 'UA-41565642-16', {'sampleRate': sampleRate, 'storage': 'none'});
+	
+	ga('set', {
+		'appName': 'Smart IPTV',
+	    'appId': 'app.siptv.webos',
+	    'appVersion': appVersion,
+		'checkProtocolTask': null
+	});
+
+	ga('send', 'screenview', {screenName: 'Channels'});
+
+</script>
+-->
+
+
+</head>
+
+<body ondragstart="return false" onselectstart="return false">
+
+<div id="outerContainer">
+
+<!-- title -->
+<div id="appName">Smart IPTV by needz</div>
+
+<!-- Inner Container -->
+
+<div id="innerContainer">
+	
+<!-- 	<div id="menu_debugWindow"></div> -->
+	
+	<div id="toast">
+		<div id="toastBubble">
+			<div id="toastText"></div>
+		</div>
+	</div>
+	
+	<div id="topBar">
+	
+		<div id="currentTime" class="chanTime">Time</div>
+		<div id="groupName">Loading channel list...</div>
+		<div id="menuNavigation">
+			<div class="pageNavActive"></div>
+			<div class="pageNavInactive"></div>
+		</div>
+		<div id="moreInfo">(7 day demo)</div>
+	</div>
+	
+	<div id="moreInfo2" style="font-size: 23px;">
+<!--
+		<p>48 часов на ознакомление с приложением истекли.<br />
+		Активировать ТВ можно после поддержки проекта.<br />
+		Информация на siptv.app/faq/, а также по needz@siptv.app<br />
+		<span style="font-size: 24px; color: #FFCB38;">Появятся ли новые бесплатные каналы после активации? Нет.</span></p>
+-->
+				<p><!-- 48 hour --><span style="font-size: 24px; color: #FFCB38;">Limited time test period is over.</span><br /><br />
+		<!-- Please look for a paid version in the official<br /> <span style="color: #FFCB38;">Samsung Apps Store</span><br /> -->
+		
+		Your TV needs to be activated after one time fee to continue using the app.<br /><br />
+		
+		More info at <span style="font-size: 24px; color: #FFCB38;">siptv.app</span> or  by <span style="font-size: 24px; color: #FFCB38;">info@siptv.app</span><br /><br />
+		<!-- <span style="font-size: 24px; color: #FFCB38;">Will there be new free channels after activation? No.</span></p> -->
+	</div>
+	
+	<div id="moreInfo3" style="font-size: 23px;">
+		<p>You have <span style="font-size: 24px; color: #FFCB38;">7 days</span> to test the functionality of Smart IPTV with your stream sources.<br /><br />
+		Use the following TV ID<br /> to upload your playlist at <span style="font-size: 24px; color: #FFCB38;">my.siptv.app</span><br />
+		<div class="macAddress"></div><br />
+		You can continue using the application<br /> after one time activation fee.<br /><br />
+		<!-- <div style="text-align: center;"><img src="images/app_store2.png" border="0" /></div><br /> -->
+		More info at <span style="font-size: 24px; color: #FFCB38;">siptv.app</span> or  by <span style="font-size: 24px; color: #FFCB38;">info@siptv.app</span><br /><br />
+		<!-- <span style="font-size: 24px; color: #FFCB38;">Will there be new free channels after activation? No.</span></p> -->
+	</div>
+	<div id="moreInfo4" style="font-size: 23px;">
+<!--
+		<p>Пожалуйста, загрузите свой плейлист.<br />
+		Информация на <span style="font-size: 24px; color: #FFCB38;">siptv.app/faq/</span><br /></p>
+-->
+		<p>Your TV ID is activated.<br /><br />
+		There is no playlist uploaded for your TV.<br /><br />
+		Use the following TV ID<br /> to upload your playlist at <span style="font-size: 24px; color: #FFCB38;">my.siptv.app</span><br />
+		<div class="macAddress"></div><br />
+		More info at <span style="font-size: 24px; color: #FFCB38;">siptv.app</span> or  by <span style="font-size: 24px; color: #FFCB38;">info@siptv.app</span><br /><br />
+	</div>
+	
+<!-- 	<div class="macAddress"></div> -->
+	
+	<div id="loadingSpinner"></div>
+	
+	<div id="page_right"><img src="images/new/icon_pg_right.svg" /></div>
+	<div id="page_left"><img src="images/new/icon_pg_left.svg" /></div>
+	
+	<div id="parentPopUpOuter">
+		<div id="parentPopUp">
+			
+			<div id="parentHeader">Enter Parent PIN:</div>
+			<div id="parentPIN">••••</div>
+			<div id="parentKeyboard">
+				
+				<div id="parentNumKeys">
+					
+					<div class="parentNumKey num1">1</div><div class="parentNumKey num2">2</div><div class="parentNumKey num3">3</div><div class="parentNumKey num4">4</div><div class="parentNumKey num5">5</div><div class="parentNumKey num6">6</div><div class="parentNumKey num7">7</div><div class="parentNumKey num8">8</div><div class="parentNumKey num9">9</div><div class="parentNumKey num0">0</div>
+							
+				</div>
+						
+				<div id="parentCtrlKeys">
+					
+					<div class="parentCtrlKey">OK</div><div class="parentCtrlKey">Close</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+	
+
+	<div id="userTutorial">
+		<div id="tutWindow">
+			<div id="closeButton"><img src="images/new/icon_close.svg" /></div>
+			<p>The application <span style="font-size: 24px; color: #FFCB38;">does not contain any channels</span>, please upload your own.<br />
+			You will find general information at <span style="font-size: 24px; color: #FFCB38;">siptv.app</span></p>
+			<p><span style="color: #a6a6a6;">P+/P- and Arrows</span> - Switch pages, groups, channels and videos<br />
+			<span style="color: #a6a6a6;">Up/Down</span> - Show current programme information; Channel history<br />
+			<span style="color: #a6a6a6;">ОК, Wheel</span> - Load channel list in play mode<br />
+			<span style="color: #a6a6a6;">INFO, INFOx2</span> - Show current programme information<br />
+			<span style="color: #a6a6a6;">Nr. Keys</span> - Channel number selection<br />
+			<span style="color: #a6a6a6;">"0"</span> - Reload playlist; Previous channel in play mode<br />
+			
+			<span style="color: #a6a6a6;">BACK</span> - Hide channel list and infobar; Go back to primary list<br />
+			<span style="color: #a6a6a6;">PLAY/PAUSE/STOP</span> - Play/pause/stop/restart stream/video<br /></p>
+
+			<p><span style="color: #d02828;">RED</span> - Settings; Add favourite; Select audio/subs track in stream/video<br />
+			<span style="color: #39c400;">GREEN</span> - Electronic Programme Guide (EPG); Choose video play mode<br />
+			<span style="color: #f99e0d;">YELLOW</span> - Sort channels; Show all channels; Show clock in Play mode<br />
+			<span style="color: #385ade;">BLUE</span> - Show Groups; Settings in play mode</p>
+		</div>
+	</div>
+
+<div id="numberKeyFieldOuter">
+	<div id="numberKeyField"></div>
+</div>
+
+<div id="menuButtons">
+	
+	<!-- button -->	
+	<div id="buttonContainer">
+		<div id="btn_back" class="buttonDescription"><span id="btn_back" style="padding-left: 42px; background: url(images/icon_tvhelp_back.png) no-repeat left;">Back</span></div>
+		
+		<!-- exit key description -->	
+		<div id="btn_exit" class="buttonDescription"><span id="btn_exit" style="padding-left: 42px; background: url(images/icon_tvhelp_exit.png) no-repeat left;">Exit</span></div>
+		
+		<div id="btn_info" class="buttonDescription"><span id="btn_back" style="padding-left: 42px; background: url(images/common/btn_info.png) no-repeat left;">Help</span></div>
+		
+		<div id="btn_zero" class="buttonDescription"><span id="btn_zero" style="padding-left: 42px; background: url(images/common/btn_zero.png) no-repeat left;">Reload</span></div>
+		
+		<div id="btn_settings" class="buttonDescription"><span id="btn_settings" style="padding-left: 27px; background: url(images/common/btn_red.png) no-repeat left;">Settings</span></div>
+
+		<div id="btn_archive" class="buttonDescription"><span id="btn_archive" style="padding-left: 27px; background: url(images/common/btn_green.png) no-repeat left;">EPG</span></div>
+		
+	<!-- 	<div id="btn_epg" class="buttonDescription"><span id="btn_epg" style="padding-left: 42px; background: url(LGLibrary/images/icon_tvhelp_yellow.png) no-repeat left;">EPG</span></div> -->
+		<div id="btn_all" class="buttonDescription"><span id="btn_all" style="padding-left: 27px; background: url(images/common/btn_yellow.png) no-repeat left;">Sort</span></div>
+		<div id="btn_group" class="buttonDescription"><span id="btn_back" style="padding-left: 27px; background: url(images/common/btn_blue.png) no-repeat left;">Groups</span></div>
+		
+		<div id="btn_pgdn" class="buttonDescription"><span id="btn_back" style="padding-left: 42px; background: url(images/icon_tvhelp_pgup.png) no-repeat left;">Gr -</span></div>
+		<div id="btn_pgup" class="buttonDescription"><span id="btn_back" style="padding-left: 42px; background: url(images/icon_tvhelp_pgdn.png) no-repeat left;">Gr +</span></div>
+	</div>
+	
+
+	<!-- copyright -->
+	<div class="copyright">by needz</div>
+</div>
+
+	
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>

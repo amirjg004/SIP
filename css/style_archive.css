@@ -1,0 +1,227 @@
+#groupName {
+	/* color: rgb(220,220,220); */
+}
+
+#arcMenuNavigation{
+	position:absolute;
+	height:54px;
+	width: 800px;
+	left: 240px;
+	top:0px;
+	color: #aaa;
+	text-align: center;
+	line-height: 54px;
+}
+
+/* ----- ARCHIVE -------- */
+
+#arc_MenuContainerBack {
+	position: absolute;
+	width: 1000px;
+	height: 532px;
+	left: 0px;
+	top: 0px;
+	/*background: #1f1f1f;*/
+    /*box-shadow: inset 0px 0px 0px 2px #ccc;*/
+
+}
+
+#arc_MenuContainer {
+	position: absolute;
+	left: 140px;
+	top: 94px;
+	width: 1000px;
+	height: 532px;
+	overflow: hidden;
+	z-index: 2;
+	
+}
+
+.arc_eachMenuDefault
+{
+	
+	position:absolute;
+	font-family:TiresiasScreenfont;
+	height:38px;
+	line-height: 38px;
+	width: 992px;
+	background: #1f1f1f;
+}
+
+.arcEven {
+	background: #0e0e0e;
+}
+
+.arcOdd {
+	background: #1f1f1f;
+}
+
+.arc_eachMenuSelected 
+{
+	position:absolute;
+	font-family:TiresiasScreenfont;
+	height:38px;
+	line-height: 38px;
+	width: 992px;
+/* 	-webkit-box-sizing: border-box; */
+	
+
+}
+
+.arc_eachMenuTime
+{
+	position: relative;
+	float: left;
+	margin-left: 15px;
+	line-height: 38px;
+	font-size: 25px;
+	font-family:LG Display;
+	color: #b2b2b2;
+	width: 140px;
+	text-align: right;
+/*
+	white-space:nowrap;
+	overflow: hidden;
+*/
+}
+
+.arc_eachMenuEPG
+{
+	
+	float: left;
+	margin-left: 22px;
+	overflow:hidden;
+	white-space:nowrap;
+	font-size:25px;
+	font-family:LG Display;
+	line-height: 38px;
+	color: #b2b2b2;
+	width: 751px;
+	text-overflow: ellipsis;
+}
+
+.arc_eachMenuArcOn
+{
+	float: left;
+	margin: 10px 0px 0px 20px;
+	background: url(../images/arc_rewind.png) no-repeat top;
+	width: 24px;
+	height: 16px;
+}
+
+.arc_eachMenuArcOff
+{
+	float: left;
+}
+
+#arcMenuProgress {
+	position: absolute;
+	top: 94px;
+	right: 140px;
+	height: 532px;
+	width: 8px;
+	display: none;
+}
+
+#arcProgBack {
+	position: absolute;
+	height: 532px;
+	width: 6px;
+	background: #444;
+	z-index: 2;
+	border-radius: 6px;
+	opacity: 0.6;
+	
+}
+
+#arcProgRunner {
+	position: absolute;
+	width: 6px;
+	background: #bbb;
+	border-radius: 6px;
+	z-index: 2;
+}
+
+#page_right {
+	position: absolute;
+	top: 94px;
+	right: 18px;
+	width: 50px;
+	height: 532px;
+	line-height: 532px;
+/* 	background: url(../images/new/page_right1.png) no-repeat right; */
+	opacity: 0.5;
+	color: rgb(220,220,220);
+	padding: 0 20px 0 0px;
+	display: none;
+	text-align: right;
+}
+
+#page_right img {
+	left: auto;
+	right: 0;
+	margin: auto 0;
+}
+
+#page_right:hover {
+	opacity: 0.99;
+}
+
+#page_left {
+	position: absolute;
+	top: 94px;
+	left: 18px;
+	width: 50px;
+	height: 532px;
+line-height: 532px;
+	/* background: url(../images/new/page_left1.png) no-repeat left; */
+	opacity: 0.5;
+	color: rgb(220,220,220);
+	padding: 0 0 0 20px;
+	display: none;
+}
+
+#page_left img {
+	left: 0;
+	margin: auto 0;
+}
+
+#page_left:hover {
+	opacity: 0.99;
+}
+
+.fs_eachTimerItem {
+
+	position: absolute;
+	top: -1px;
+	right: -12px;
+	height: 38px;
+	line-height: 31px;
+	color: #d02828;
+/* 	color: #fab70d; */
+	font-size: 28px;
+/* 	background: #666; */
+}
+
+.fs_eachTimerClock {
+
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	margin: auto 0;
+	width: 18px;
+	height: 18px;
+	right: 23px;
+	color: yellow;
+/* 	color: #fab70d; */
+	font-size: 28px;
+/* 	background: #666; */
+
+}
+
+.fs_eachTimerClock img {
+	width: 18px;
+	height: 18px;
+	opacity: 0.75;
+}
+

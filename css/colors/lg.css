@@ -1,0 +1,89 @@
+/* Channel list */
+
+.pageNavActive:hover {
+	background: #ae1d50;
+}
+
+.pageNavInactive:hover {
+	background: #ae1d50;
+}
+
+.eachMenuSelected
+{
+	background: url(../../images/new/ch_selected1.png) no-repeat;
+}
+
+.eachMenuSelected:active
+{
+	background: url(../../images/new/ch_active1.png) no-repeat;
+}
+
+
+.progSpan {
+	background: #ae1d50;
+}
+
+/* Fullscreen */
+
+.bar, #progRunner, .controlButton:hover {
+	background: #cb0048;
+}
+
+#menu_bar {
+	background: #cb0048;
+}
+
+.selected {
+	
+	background: url(../../images/br_select.png) repeat-x top,url(../../images/br_select.png) repeat-x bottom;
+	
+}
+
+
+.bitrate, #bufferingText, .groupSeparator {
+	color: #CB0048;
+}
+
+.fs_eachMenuSelected 
+{
+	background: url(../../images/br_select.png) repeat-x top,url(../../images/br_select.png) repeat-x bottom;
+}
+
+.fs_eachMenuSelected:active
+{
+	background: url(../../images/br_active.png) repeat-x top,url(../../images/br_active.png) repeat-x bottom;
+}
+
+.arc_eachMenuSelected
+{
+	background: url(../../images/br_select.png) repeat-x top,url(../../images/br_select.png) repeat-x bottom;
+}
+
+.arc_eachMenuSelected.arcEven
+{
+	background: url(../../images/br_select.png) repeat-x top,url(../../images/br_select.png) repeat-x bottom, #0e0e0e;
+}
+
+.arc_eachMenuSelected.arcOdd
+{
+	background: url(../../images/br_select.png) repeat-x top,url(../../images/br_select.png) repeat-x bottom, #1f1f1f;
+}
+
+.arc_eachMenuSelected:active
+{
+	background: url(../../images/br_active.png) repeat-x top,url(../../images/br_active.png) repeat-x bottom;
+}
+
+.arc_eachMenuSelected:active.arcEven
+{
+	background: url(../../images/br_active.png) repeat-x top,url(../../images/br_active.png) repeat-x bottom, #0e0e0e;
+}
+
+.arc_eachMenuSelected:active.arcOdd
+{
+	background: url(../../images/br_active.png) repeat-x top,url(../../images/br_active.png) repeat-x bottom, #1f1f1f;
+}
+
+.button:hover, .pref_button:hover {
+	background: url(../../images/new/fs_button_hover.png) no-repeat;
+}

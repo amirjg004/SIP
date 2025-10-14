@@ -1,0 +1,87 @@
+/* Channel list */
+
+.pageNavActive:hover {
+	background: #CE840F;
+}
+
+.pageNavInactive:hover {
+	background: #CE840F;
+}
+
+.eachMenuSelected
+{
+	background: url(../../images/new/ch_selected_yellow.png) no-repeat;
+}
+
+.eachMenuSelected:active
+{
+	background: url(../../images/new/ch_active_yellow.png) no-repeat;
+}
+
+.progSpan {
+	background: #CE840F;
+}
+
+/* Fullscreen */
+
+.bar, #progRunner, .controlButton:hover {
+	background: #CE840F;
+}
+
+#menu_bar {
+	background: #CE840F;
+}
+
+.selected {
+	
+	background: url(../../images/new/br_select_yellow.png) repeat-x top,url(../../images/new/br_select_yellow.png) repeat-x bottom;
+	
+}
+
+.bitrate, #bufferingText, .groupSeparator {
+	color: #CE840F;
+}
+
+.fs_eachMenuSelected 
+{
+	background: url(../../images/new/br_select_yellow.png) repeat-x top,url(../../images/new/br_select_yellow.png) repeat-x bottom;
+}
+
+.fs_eachMenuSelected:active
+{
+	background: url(../../images/new/br_active_yellow.png) repeat-x top,url(../../images/new/br_active_yellow.png) repeat-x bottom;
+}
+
+.arc_eachMenuSelected
+{
+	background: url(../../images/new/br_select_yellow.png) repeat-x top,url(../../images/new/br_select_yellow.png) repeat-x bottom;
+}
+
+.arc_eachMenuSelected.arcEven
+{
+	background: url(../../images/new/br_select_yellow.png) repeat-x top,url(../../images/new/br_select_yellow.png) repeat-x bottom, #0e0e0e;
+}
+
+.arc_eachMenuSelected.arcOdd
+{
+	background: url(../../images/new/br_select_yellow.png) repeat-x top,url(../../images/new/br_select_yellow.png) repeat-x bottom, #1f1f1f;
+}
+
+.arc_eachMenuSelected:active
+{
+	background: url(../../images/new/br_active_yellow.png) repeat-x top,url(../../images/new/br_active_yellow.png) repeat-x bottom;
+}
+
+.arc_eachMenuSelected:active.arcEven
+{
+	background: url(../../images/new/br_active_yellow.png) repeat-x top,url(../../images/new/br_active_yellow.png) repeat-x bottom, #0e0e0e;
+}
+
+.arc_eachMenuSelected:active.arcOdd
+{
+	background: url(../../images/new/br_active_yellow.png) repeat-x top,url(../../images/new/br_active_yellow.png) repeat-x bottom, #1f1f1f;
+}
+
+.button:hover, .pref_button:hover {
+	background: url(../../images/new/fs_button_hover_yellow.png) no-repeat;
+}

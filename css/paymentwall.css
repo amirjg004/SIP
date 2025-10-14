@@ -1,0 +1,178 @@
+body{
+	margin:0;
+	overflow:hidden;
+	background: #000;
+
+}
+
+
+
+#outerContainer {
+	position: absolute;
+	width:1280px; 
+	height:720px;
+	background: #111;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+
+
+#paymentInfo {
+	position: absolute;
+	top: 0;
+	width: 1280px;
+	height: 720px;
+/*	background: #444;*/
+}
+
+#appLogo {
+	position: absolute;
+	top: 32px;
+	right: 32px;
+/* 	background: url(../images/app_store2.png) no-repeat center; */
+	z-index: 1000;
+/*	background: #ccc;*/
+}
+
+
+/*
+#pw_smart_wrapper {
+	position: absolute !important;
+	top: -100px;
+}
+*/
+
+#cc_main_window {
+	position: absolute !important;
+}
+
+.credit_card {
+	top: 32px !important;
+}
+
+.error_notification {
+	top: 2px !important;	
+}
+
+#pw_preloader_wrapper {
+	top: 106px !important;
+}
+
+#pw_back_button {
+	top: 562px !important;
+}
+
+
+
+
+#appLogo img {
+	
+	height: 80px;
+	
+}
+
+
+#smartPayLogo {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 300px;
+	height: 100px;
+	background: url(../images/smartpay.png) no-repeat center;
+/*	background: #ccc;*/
+}
+
+#smartpayNumPad {
+	left: -245px !important;
+	box-shadow: 0px 0px 20px 14px #000;
+}
+
+.smartpayNumPadArrow {
+	display: none !important;
+}
+
+
+#macAddress {
+	color: #FFCB38;
+	text-align: center;
+	font-size: 32px;
+}
+
+
+
+.buttonDescription{	
+/*
+	left:164px;
+	float:left;
+*/
+	display: inline-block;
+/* 	margin-right: 2px; */
+	height:54px;
+	line-height: 54px;
+	font-size:24px;
+	min-width:54px;
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:0px;
+	font-family:LG Display;
+	text-align:center;
+	color:rgb(220,220,220);
+ 	/* border-right: solid 3px #000; */
+ 	background: #222;
+ 	border-radius: 3px;
+}
+
+.buttonDescription:hover{
+	background: url(../images/br_select.png) repeat-y left,url(../images/br_select.png) repeat-y right,url(../images/br_select.png) repeat-x top,url(../images/br_select.png) repeat-x bottom;
+}
+
+.buttonDescription:active{
+	background: url(../images/br_active.png) repeat-y left,url(../images/br_active.png) repeat-y right,url(../images/br_active.png) repeat-x top,url(../images/br_active.png) repeat-x bottom;
+}
+
+.buttonDescription span {
+	font-size: 24px;
+	line-height: 54px;
+	text-decoration: none;
+}
+
+
+
+.chanTime {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	font-size: 24px;
+	height: 54px;
+	line-height: 54px;
+	color: rgb(220,220,220);
+}
+
+.currentTime {
+	float:right;
+	height: 60px;
+	line-height: 60px;
+	display:inline;
+	padding-right: 20px;
+	font-size:20px;
+	font-family:LG Display;
+	color:rgb(235,235,235) ;
+}
+
+
+
+.copyright{
+	position:absolute;
+	height: 54px;
+	top: 0px;
+	right:20px;
+	line-height: 54px;
+	font-size:20px;
+	font-family:LG Display;
+	color:rgb(235,235,235);
+	display: none;
+}

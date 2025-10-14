@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Archive Player</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style_fs.css">
+<!-- <link rel="stylesheet" href="css/style_fs_arc.css"> -->
+<link id="ui_colors" rel="stylesheet" href="css/colors/lg.css">
+
+<script type="text/javascript" src="webOSTVjs-1.1.1/webOSTV.js"></script>
+<script type="text/javascript" src="webOSTVjs-1.1.1/webOSTV-dev.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/keycode.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/inline_arc_play.js"></script>
+<script type="text/javascript" src="js/textfill.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/audio.js"></script>
+<script type="text/javascript" src="js/subtitles.js"></script>
+
+<script>
+
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	
+	ga('create', 'UA-41565642-16', {'sampleRate': sampleRate, 'storage': 'none'});
+	
+	ga('set', {
+		'appName': 'Smart IPTV',
+	Â  Â  'appId': 'app.siptv.webos',
+	Â  Â  'appVersion': appVersion,
+		'checkProtocolTask': null
+	});
+
+	ga('send', 'screenview', {screenName: 'Archive'});
+
+
+</script>
+
+
+</head>
+
+<body ondragstart='return false' onselectstart='return false'>
+
+<div id='bodycontent'>
+	
+	<div id="mediaContainer">
+				
+		<video id="video" width="1280" height="720" autoplay></video>
+					
+	</div>
+	
+</div>		
+		
+<!-- button and copyright -->	
+<!--<div id="lower_buttons" class='SuiteButtonAreaF'>-->
+
+
+
+<div id='fsClock' class="fsClock" style="display:none;">Time</div>
+
+<div id='btn_audio' class="pref_button audioButton"><img src="images/new/icon_audio.svg" /></div>
+
+<div id='btn_qmenu' class="button qmenuButton"><img src="images/new/icon_qmenu.svg" /></div>
+<div id='btn_back' class="button backButton"><img src="images/new/icon_back.svg" /></div>
+
+<div id='btn_info' class="button infoButton"><img src="images/new/icon_info.svg" /></div>
+
+<div id='btn_pause' class="button pauseButton"><img src="images/new/icon_pause.svg" /></div>
+<div id='btn_left' class="button rwButton"><img id='btn_left_img' src="images/new/icon_rw.svg" /></div>
+<div id='btn_right' class="button ffButton"><img id='btn_right_img' src="images/new/icon_ff.svg" /></div>
+
+<div id='btn_clock' class="button clockButton"><img src="images/new/icon_clock.svg" /></div>
+
+
+<div id="audioSelect">
+	<div id="audioScroll">
+		<div id="audioText"></div>
+	</div>
+	<div id="audioToolPanel">
+		<div id="fsGreenButton" class="fsMenuButton"><div id="greenDot"></div>Subtitles</div>
+	</div>
+</div>
+
+<div id="subsSelect">
+	<div id="subsScroll">
+		<div id="subsText"></div>
+	</div>
+	<div id="subsToolPanel">
+		<div id="fsRedButton" class="fsMenuButton"><div id="redDot"></div>Audio</div>
+	</div>
+</div>
+
+
+<div id="bufferingInfo">
+	<div id="bufferingText"></div>
+</div>
+
+<div id="infoBar" class="infoBar" style="display: block;">
+	
+	<div id="channelInfo" style="display:none;">
+	
+		<div id="channelInfoMiddle">
+			
+		<div id="channelInfoProgress">
+			<div id="infoProgBack"></div>		
+			<div id="infoProgRunner"></div>
+		</div>
+			
+			<div id="channelInfoContent">
+				<div id="channelInfoTitle"></div>
+				<div id="channelInfoDesc"></div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div id="channelInfoProgress" class="channelInfoProgress" style="display: none;">
+		<div id="progBack" class="progBack"></div>		
+		<div id="progRunner" class="progRunner"></div>
+	</div>
+<!--	<div id='btn_back' class='buttonDescription'>BACK</div> -->
+	<div id="debugWindow"></div>
+	<div class="progress"></div>
+	<div id="bar" class="bar"></div>
+	
+	<!-- copyright -->
+<!--	<div id='channelIcon' class='channelIcon'></div>-->
+	<div id="channelNmNr">
+		<div id='channelNumber' class='channelNumber'></div>
+		<div id='channelNmFav'><img src="images/new/icon_fav.svg" /></div>
+		<div id='channelName' class='title'><span></span></div>
+	</div>
+	
+	<div id="epgTime">
+		<div id='channelTime1' class="channelTime1"></div>
+		<div id='channelTime2' class="channelTime2"></div>
+	</div>
+	<div id="epgInfo">
+		<div id='channelEPGnow' class='channelEPG1'></div>
+		<div id='channelEPGlater' class='channelEPG2'></div>
+	</div>
+	<div id="epgLeft">
+		<div id='channelLeft1' class='channelLeft1'></div>
+		<div id='channelLeft2' class='channelLeft2'></div>
+	</div>
+	<div id='currentTime' class='time'>Time</div>
+	<div id="chPicon" class="barIcon"></div>
+	<div id='bitrateValue' class='bitrate'>Connecting...</div>
+	
+	
+
+	
+</div>
+
+
+</body>
+</html>
